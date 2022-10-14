@@ -9,9 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let converter = ConverterService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        print(converter.convert(from: "12534", fromSystem: 6, toSystem: 12))
     }
 
 

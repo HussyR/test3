@@ -13,7 +13,19 @@
 		83627D8E28F9C62900D3702F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83627D8C28F9C62900D3702F /* Main.storyboard */; };
 		83627D9028F9C62D00D3702F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83627D8F28F9C62D00D3702F /* Assets.xcassets */; };
 		83627D9328F9C62D00D3702F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83627D9128F9C62D00D3702F /* LaunchScreen.storyboard */; };
+		83627D9B28F9C64A00D3702F /* ConverterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83627D9A28F9C64A00D3702F /* ConverterService.swift */; };
+		83627DA328F9D0C000D3702F /* NumberSystemConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83627DA228F9D0C000D3702F /* NumberSystemConverterTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83627DA428F9D0C000D3702F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83627D7B28F9C62900D3702F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83627D8228F9C62900D3702F;
+			remoteInfo = NumberSystemConverter;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		83627D8328F9C62900D3702F /* NumberSystemConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumberSystemConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +36,20 @@
 		83627D8F28F9C62D00D3702F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83627D9228F9C62D00D3702F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83627D9428F9C62D00D3702F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83627D9A28F9C64A00D3702F /* ConverterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterService.swift; sourceTree = "<group>"; };
+		83627DA028F9D0C000D3702F /* NumberSystemConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NumberSystemConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83627DA228F9D0C000D3702F /* NumberSystemConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberSystemConverterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		83627D8028F9C62900D3702F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83627D9D28F9D0C000D3702F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				83627D8528F9C62900D3702F /* NumberSystemConverter */,
+				83627DA128F9D0C000D3702F /* NumberSystemConverterTests */,
 				83627D8428F9C62900D3702F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				83627D8328F9C62900D3702F /* NumberSystemConverter.app */,
+				83627DA028F9D0C000D3702F /* NumberSystemConverterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,12 +83,21 @@
 				83627D8628F9C62900D3702F /* AppDelegate.swift */,
 				83627D8828F9C62900D3702F /* SceneDelegate.swift */,
 				83627D8A28F9C62900D3702F /* ViewController.swift */,
+				83627D9A28F9C64A00D3702F /* ConverterService.swift */,
 				83627D8C28F9C62900D3702F /* Main.storyboard */,
 				83627D8F28F9C62D00D3702F /* Assets.xcassets */,
 				83627D9128F9C62D00D3702F /* LaunchScreen.storyboard */,
 				83627D9428F9C62D00D3702F /* Info.plist */,
 			);
 			path = NumberSystemConverter;
+			sourceTree = "<group>";
+		};
+		83627DA128F9D0C000D3702F /* NumberSystemConverterTests */ = {
+			isa = PBXGroup;
+			children = (
+				83627DA228F9D0C000D3702F /* NumberSystemConverterTests.swift */,
+			);
+			path = NumberSystemConverterTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +120,24 @@
 			productReference = 83627D8328F9C62900D3702F /* NumberSystemConverter.app */;
 			productType = "com.apple.product-type.application";
 		};
+		83627D9F28F9D0C000D3702F /* NumberSystemConverterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83627DA628F9D0C000D3702F /* Build configuration list for PBXNativeTarget "NumberSystemConverterTests" */;
+			buildPhases = (
+				83627D9C28F9D0C000D3702F /* Sources */,
+				83627D9D28F9D0C000D3702F /* Frameworks */,
+				83627D9E28F9D0C000D3702F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83627DA528F9D0C000D3702F /* PBXTargetDependency */,
+			);
+			name = NumberSystemConverterTests;
+			productName = NumberSystemConverterTests;
+			productReference = 83627DA028F9D0C000D3702F /* NumberSystemConverterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +150,10 @@
 				TargetAttributes = {
 					83627D8228F9C62900D3702F = {
 						CreatedOnToolsVersion = 13.3;
+					};
+					83627D9F28F9D0C000D3702F = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 83627D8228F9C62900D3702F;
 					};
 				};
 			};
@@ -116,6 +171,7 @@
 			projectRoot = "";
 			targets = (
 				83627D8228F9C62900D3702F /* NumberSystemConverter */,
+				83627D9F28F9D0C000D3702F /* NumberSystemConverterTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +187,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83627D9E28F9D0C000D3702F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,11 +203,28 @@
 			files = (
 				83627D8B28F9C62900D3702F /* ViewController.swift in Sources */,
 				83627D8728F9C62900D3702F /* AppDelegate.swift in Sources */,
+				83627D9B28F9C64A00D3702F /* ConverterService.swift in Sources */,
 				83627D8928F9C62900D3702F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83627D9C28F9D0C000D3702F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83627DA328F9D0C000D3702F /* NumberSystemConverterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83627DA528F9D0C000D3702F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83627D8228F9C62900D3702F /* NumberSystemConverter */;
+			targetProxy = 83627DA428F9D0C000D3702F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		83627D8C28F9C62900D3702F /* Main.storyboard */ = {
@@ -336,6 +416,42 @@
 			};
 			name = Release;
 		};
+		83627DA728F9D0C000D3702F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DK8A94C3H5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.NumberSystemConverterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NumberSystemConverter.app/NumberSystemConverter";
+			};
+			name = Debug;
+		};
+		83627DA828F9D0C000D3702F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DK8A94C3H5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.NumberSystemConverterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NumberSystemConverter.app/NumberSystemConverter";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -353,6 +469,15 @@
 			buildConfigurations = (
 				83627D9828F9C62D00D3702F /* Debug */,
 				83627D9928F9C62D00D3702F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83627DA628F9D0C000D3702F /* Build configuration list for PBXNativeTarget "NumberSystemConverterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83627DA728F9D0C000D3702F /* Debug */,
+				83627DA828F9D0C000D3702F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
